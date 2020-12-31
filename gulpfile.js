@@ -4,7 +4,7 @@ const minify = require('gulp-clean-css');
 const sass = require('gulp-sass');
 const $ = require('gulp-load-plugins')();
 const head =
-    '/*\r\n* Cirrus ' +
+    '/*\r\n* Cirrus version for Uncover App' +
     prop.version +
     `\r\n* Stanley Lim, Copyright ${new Date().getFullYear()}\r\n* https://spiderpig86.github.io/Cirrus\r\n*/\r\n`;
 
