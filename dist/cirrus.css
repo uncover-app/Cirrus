@@ -3,37 +3,6 @@
 * Stanley Lim, Copyright 2020
 * https://spiderpig86.github.io/Cirrus
 */
-/* BASE STYLING FOR CIRRUS */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Nunito+Sans:400,700");
-* {
-  margin: 0;
-  padding: 0;
-  /* Prevent setting borders from increasing the size of an elrement */
-  box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: transparent; }
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  border: none;
-  height: 100%; }
-
-/* Nunito Sans for the font */
-body {
-  letter-spacing: 0.01rem;
-  line-height: 1.8;
-  /* Globally adjust line height */
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  letter-spacing: 0.01rem;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  color: var(--cirrus-fg); }
-
 /* Remove bullets from unordered lists */
 ul {
   list-style: none; }
@@ -243,7 +212,7 @@ fieldset {
   font-size: 0.75rem;
   letter-spacing: 0.03rem;
   text-transform: uppercase;
-  font-family: Montserrat;
+  font-family: inherit;
   min-width: 2rem;
   user-select: none;
   margin-bottom: 1rem;
@@ -739,8 +708,6 @@ pre > code {
 /* Smaller than the defined pixels are the dimensions for that range */
 /* Color scheme for Cirrus */
 /* v2 Colors */
-@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 :root {
   /* v1 Colors */
   --cirrus-fg: #374054;
@@ -788,42 +755,42 @@ pre > code {
 /* Constants */
 /* Headers */
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: inherit;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem; }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: inherit;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem; }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: inherit;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem; }
 
 h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: inherit;
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem; }
 
 h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: inherit;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem; }
 
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: inherit;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2;
@@ -887,9 +854,8 @@ mark,
   font-size: 5.5rem;
   letter-spacing: 0.05rem; }
 
-/* Deprecated, use font-bold */
 .font-alt {
-  font-family: 'Nunito Sans'; }
+  font-family: inherit; }
 
 .content h1 {
   line-height: 1.125em;
@@ -1284,7 +1250,7 @@ select {
   width: 100%;
   border: 1px solid #dee2e6;
   border-radius: 3px;
-  font-family: 'Nunito Sans';
+  font-family: inherit;
   font-size: var(--font-size-m);
   letter-spacing: 0.02rem;
   transition: all 0.3s;
@@ -1415,7 +1381,7 @@ textarea[type='text'] {
   width: 100%;
   border: 1px solid #dee2e6;
   border-radius: 3px;
-  font-family: 'Nunito Sans';
+  font-family: inherit;
   font-size: var(--font-size-m);
   letter-spacing: 0.02rem;
   transition: all 0.3s;
@@ -1554,7 +1520,7 @@ select {
   width: 100%;
   border: 1px solid #dee2e6;
   border-radius: 3px;
-  font-family: 'Nunito Sans';
+  font-family: inherit;
   font-size: var(--font-size-m);
   letter-spacing: 0.02rem;
   transition: all 0.3s;

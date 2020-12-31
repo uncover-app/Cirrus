@@ -1,6 +1,4 @@
 @import './theme.scss';
-@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 /* FONT */
 
@@ -21,7 +19,7 @@ $font-transformations: 'uppercase', 'lowercase', 'capitalize';
 /* Headers */
 @for $index from 1 through 6 {
     h#{$index} {
-        font-family: 'Montserrat', sans-serif;
+        font-family: inherit;
         font-size: $base-header-size + $header-size-diff * (6 - $index);
         font-weight: 700;
         line-height: 1.2;
@@ -90,13 +88,8 @@ mark,
     }
 }
 
-/* Deprecated, use font-bold */
-// strong {
-//   font-weight: 700;
-// }
-
 .font-alt {
-    font-family: 'Nunito Sans';
+    font-family: inherit;
 }
 
 .content {
